@@ -19,7 +19,7 @@ The program reads input from the following CSV files:
 
 ### OUTPUT
 
-The output of 12 queries will be stored in 12 different csv files.
+**The output of 12 queries will be stored in 12 different csv files.**
 
 **[Q01]** List all the actors who acted in at least one film in the 80s (1980-1990, both ends inclusive) and in at least one film in the 21st century (>=2000). Sort alphabetically, by the actor's last and first name. 
 
