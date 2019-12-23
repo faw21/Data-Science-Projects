@@ -28,6 +28,7 @@ Each row in the file shows one rental transaction, indicating the bicycle ID, th
 - **toCNT** = total number of ``to'' bikes at that station for that day (i.e., number of transactions with that _stationID_ in the **to** column)
 - **rebalCNT*** = total number of ``rebalanced'' bikes. 
 
+Given the information, the tasks:
 
 * **Task 1.1** Print the first 20 rows of the data structure store the above data (i.e, **daily breakdown**).
 
@@ -39,7 +40,7 @@ For this task there are two variables containing input from the user:
 * **filter_month** which corresponds to the month of interest (1-9, should have a default value of 4, i.e., April), and  
 * **filter_stationID** which corresponds to the stationID of interest (should have a default value of 1046).  
 
-Given the above two variables, you should create the following graphs:
+Given the above two variables, create the following graphs:
 * **Task 2.1** Show a bar chart for the 25 most popular bikestations when considering the number of **fromCNT** per station (for filter_month). Y axis is the fromCNT per station, X axis is the stationID. The first stationID corresponds to the most popular station. 
 
 * **Task 2.2** For the filter_month and for the filter_stationID show a graph that shows the distribution of bike rentals throughout the month, for that station only. Y axis is the fromCNT for that stationID for that day, X axis is the different days in that month (i.e., 1 - 30 for April). 
