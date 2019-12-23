@@ -4,7 +4,8 @@
 ```
 python3 mybikes.py baseURL command [parameters]  
 ```
-where baseURL is the prefix URL of the source of the data, and it is typically https://api.nextbike.net/maps/gbfs/v1/nextbike_pp/en/. Then, the program will append postfixes to the baseURL and access two data feeds: 
+where baseURL is the prefix URL of the source of the data, and it is typically https://api.nextbike.net/maps/gbfs/v1/nextbike_pp/en/. Then, the program will append postfixes to the baseURL and access two data feeds:
+
 **Station Information**: $station_infoURL = $baseURL+'/station_information.json', which provides for each docking station: station_id, name, latitude 
  and longtitude, and the total capacity (e.g., [https://api.nextbike.net/maps/gbfs/v1/nextbike_pp/en/station_information.json](https://api.nextbike.net/maps/gbfs/v1/nextbike_pp/en/station_information.json)).   
 
