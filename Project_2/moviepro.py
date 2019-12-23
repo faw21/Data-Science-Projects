@@ -7,10 +7,6 @@ con = lite.connect('cs1656.sqlite')
 with con:
     cur = con.cursor() 
 
-    ########################################################################        
-    ### CREATE TABLES ######################################################
-    ########################################################################        
-    # DO NOT MODIFY - START 
     cur.execute('DROP TABLE IF EXISTS Actors')
     cur.execute("CREATE TABLE Actors(aid INT, fname TEXT, lname TEXT, gender CHAR(6), PRIMARY KEY(aid))")
 
@@ -25,13 +21,13 @@ with con:
 
     cur.execute('DROP TABLE IF EXISTS Movie_Director')
     cur.execute("CREATE TABLE Movie_Director(did INT, mid INT)")
-    # DO NOT MODIFY - END
+
 
     ########################################################################        
     ### READ DATA FROM FILES ###############################################
     ########################################################################        
     # actors.csv, cast.csv, directors.csv, movie_dir.csv, movies.csv
-    # UPDATE THIS
+
     with open('actors.csv', mode='r') as csv_file:
         csv_reader = csv.reader(csv_file)
         for row in csv_reader:
@@ -81,37 +77,12 @@ with con:
 
 
 
-
-
-
-
-    ########################################################################        
-    ### INSERT DATA INTO DATABASE ##########################################
-    ########################################################################        
-    # UPDATE THIS TO WORK WITH DATA READ IN FROM CSV FILES
-    #cur.execute("INSERT INTO Actors VALUES(1001, 'Harrison', 'Ford', 'Male')") 
-    #cur.execute("INSERT INTO Actors VALUES(1002, 'Daisy', 'Ridley', 'Female')")   
-
-    #cur.execute("INSERT INTO Movies VALUES(101, 'Star Wars VII: The Force Awakens', 2015, 8.2)") 
-    #cur.execute("INSERT INTO Movies VALUES(102, 'Rogue One: A Star Wars Story', 2016, 8.0)")
-    
-    #cur.execute("INSERT INTO Cast VALUES(1001, 101, 'Han Solo')")  
-    #cur.execute("INSERT INTO Cast VALUES(1002, 101, 'Rey')")  
-
-    #cur.execute("INSERT INTO Directors VALUES(5000, 'J.J.', 'Abrams')")  
-    
-    #cur.execute("INSERT INTO Movie_Director VALUES(5000, 101)")  
-
-    #con.commit()
-    
-        
-
     ########################################################################        
     ### QUERY SECTION ######################################################
     ########################################################################        
     queries = {}
 
-    # DO NOT MODIFY - START     
+
     # DEBUG: all_movies ########################
     queries['all_movies'] = '''
 SELECT * FROM Movies
@@ -132,15 +103,7 @@ SELECT * FROM Directors
     queries['all_movie_dir'] = '''
 SELECT * FROM Movie_Director
 '''    
-    # DO NOT MODIFY - END
 
-    ########################################################################        
-    ### INSERT YOUR QUERIES HERE ###########################################
-    ########################################################################        
-    # NOTE: You are allowed to also include other queries here (e.g., 
-    # for creating views), that will be executed in alphabetical order.
-    # We will grade your program based on the output files q01.csv, 
-    # q02.csv, ..., q12.csv
 
     # Q01 ########################        
     queries['q01'] = '''
@@ -287,7 +250,7 @@ SELECT * FROM Movie_Director
     ########################################################################        
     ### SAVE RESULTS TO FILES ##############################################
     ########################################################################        
-    # DO NOT MODIFY - START     
+  
     for (qkey, qstring) in sorted(queries.items()):
         try:
             cur.execute(qstring)
@@ -310,5 +273,5 @@ SELECT * FROM Movie_Director
         
         except lite.Error as e:
             print ("An error occurred:", e.args[0])
-    # DO NOT MODIFY - END
+
     
