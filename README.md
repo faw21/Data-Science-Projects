@@ -11,11 +11,11 @@ Four regular projects and one term project
 ### Project 2:
   - basic and complicate SQL queries
   - input: five csv files containing five different tables of a database
-  - output: results of eight different queries
+  - output: results of 12 different queries
   
 ### Project 3:
   - use python to implement ASSOCIATION RULE MINING
-  - input: a csv files containing information of transactions, minimum support, and minimum confidence
+  - input: a csv files containing information of transactions
   - output: transaction sets which satisfy the association rule
   
 ### Project 4:
@@ -27,3 +27,5 @@ Four regular projects and one term project
   - a big project regarding data analysis and data visualization
   - input: 90000 pieces of trip data from [HealthyRidePGH website](https://healthyridepgh.com/)
   - output: a various graphs and charts based on input data
+
+---
