@@ -1,28 +1,5 @@
-# Repository: template.project2
-# Assignment #2: SQL  
-
-> Course: **[CS 1656 - Introduction to Data Science](http://cs1656.org)** (CS 2056) -- Fall 2019    
-> Instructor: [Alexandros Labrinidis](http://labrinidis.cs.pitt.edu)  
-> 
-> Assignment: #2
-> Released: Sep 27, 2019  
-> **Due: Oct 11, 2019**
-
-### Description
-This is the **second assignment** for the CS 1656 -- Introduction to Data Science (CS 2056) class, for the Fall 2019 semester.
-
-### Goal
-The goal of this assignment is for you to gain familiarity with SQL.
-
----
-
-### What to do
-
-In this assignment you are asked to:  
-* update a skeleton Python script (`moviepro.py`) in order to read input from CSV files and insert the data into the `cs1656.sqlite` database, and   
-* provide SQL queries that answer 12 questions.
-
-The provided skeleton Python script includes database initialization commands and also includes commands to run the SQL queries and store their output in separate output files, which you should not modify. What you should update are the parts of the script that are responsible for reading in the input data (and inserting it into the database) and for specifying the 12 SQL queries.
+### USAGE:
+`python3 moviepro.py`
 
 ### Database Schema
 
@@ -77,53 +54,3 @@ You are asked to provide SQL queries that provide answers for the following ques
 * **[Q12]** Assume that the *popularity* of an actor is reflected by the average *rank* of all the movies he/she has acted in. Find the top 20 most popular actors (in descreasing order of popularity) -- list the actor's first/last name, the total number of movies he/she has acted, and his/her popularity score. For simplicity, feel free to ignore ties at the number 20 spot (i.e., always show up to 20 only).  
 
 ---
-
-### Important notes about grading
-It is absolutely imperative that your python program:  
-* runs without any syntax or other errors (using Python3) -- we will run it using the following command:  
-`python3 moviepro.py`  
-* strictly adheres to the format specifications for input and output, as explained above.     
-
-Failure in any of the above will result in **severe** point loss. 
-
-
-### Allowed Python Libraries
-You are allowed to use the following Python libraries (although not all are needed):
-```
-argparse
-collections
-csv
-json
-glob
-math
-os
-pandas
-re
-requests
-string
-sqlite3
-sys
-time
-xml
-```
-If you would like to use any other libraries, you must ask permission by Friday, October 4, 2019, using [canvas](http://cs1656.org).
-
----
-
-### How to submit your assignment
-For this assignment, you must use the repository that was created for you after visiting the classroom link. You need to update the  file `moviepro.py` as described above, and add other files that are needed for running your program. You need to make sure to commit your code to the repository provided. 
-
-The due date is **Friday, October 11, 2019 (23:59pm)**  
-
-You can submit your assignment:
-* up to **24 hours later, for -5 points**, and  
-* up to **48 hours later, for -15 points**.  
-
-Our assumption is that everybody will submit on the first deadline. If you want us to grade a late submission, you need to email us at `cs1656-staff@cs.pitt.edu`
-
-
-### About your github account
-It is very important that:  
-* Your github account can do **private** repositories. If this is not already enabled, you can do it by visiting <https://education.github.com/>  
-* You use the same github account for the duration of the course.  
-* You use the github account that you specified during the test assignment.    
