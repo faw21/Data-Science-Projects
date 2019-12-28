@@ -21,12 +21,12 @@ In particular, we will use data for the first three quarters of 2019:
 * Q3: [http://data.cs1656.org/project/HealthyRideRentals2019-Q3.csv](http://data.cs1656.org/project/HealthyRideRentals2019-Q3.csv)  
 
 Each row in the file shows one rental transaction, indicating the bicycle ID, the source bike station (from station) and the destination bike station (to station). Worth noting:
-* if there is no station ID, then this was usually a ``dockless'' bike, e.g., `BIKE 70000`,  
-* if a bike was ``magically'' moved from one station to a different one, that means this happened as a result of rebalancing, where HealthyRidePGH staff relocated the bike using a truck to address demand imbalance.   
+* if there is no station ID, then this was usually a ``dockless`` bike, e.g., `BIKE 70000`,  
+* if a bike was ``magically`` moved from one station to a different one, that means this happened as a result of rebalancing, where HealthyRidePGH staff relocated the bike using a truck to address demand imbalance.   
 
-- **fromCNT** = total number of ``from'' bikes at that station for that day (i.e., number of transactions with that _stationID_ in the **from** column)
-- **toCNT** = total number of ``to'' bikes at that station for that day (i.e., number of transactions with that _stationID_ in the **to** column)
-- **rebalCNT*** = total number of ``rebalanced'' bikes. 
+- **fromCNT** = total number of ``from`` bikes at that station for that day (i.e., number of transactions with that _stationID_ in the **from** column)
+- **toCNT** = total number of ``to`` bikes at that station for that day (i.e., number of transactions with that _stationID_ in the **to** column)
+- **rebalCNT*** = total number of ``rebalanced`` bikes. 
 
 Given the information, the tasks:
 
